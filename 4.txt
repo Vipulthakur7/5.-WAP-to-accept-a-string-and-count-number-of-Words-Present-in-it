@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class vipul{
+    
+int vip(){
+    Scanner sn=new Scanner(System.in);
+
+int cout=1;
+System.out.println("enter the statement");
+String p=sn.nextLine();
+int k=p.length();
+for(int i=0;i<k;i++)
+{
+    if(p.charAt(i)==32)
+    {
+        cout++;
+    }
+}
+
+return cout;
+}
+}
+public class Main{
+    public static void main (String[] args) {
+        vipul v=new vipul();
+       System.out.println(v.vip());
+    }
+}
